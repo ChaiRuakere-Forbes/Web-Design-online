@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Grid-based Webpage</title>
+	<style>
+		body {
+			max-width: 800px;
+			margin: auto;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.shape {
+			border: 1px solid black;
+			box-sizing: border-box;
+			position: absolute;
+		}
+
+		.blue-rectangle {
+			background-color: blue;
+			height: 33.33%;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+
+		.red-rectangle {
+			background-color: red;
+			height: 66.66%;
+			width: 33.33%;
+			top: 33.33%;
+			left: 0;
+		}
+
+		.lime-square {
+			background-color: lime;
+			height: 66.66%;
+			width: 66.66%;
+			top: 33.33%;
+			left: 33.33%;
+		}
+	</style>
+</head>
+<body>
+	<div class="shape blue-rectangle"></div>
+	<div class="shape red-rectangle"></div>
+	<div class="shape lime-square"></div>
+</body>
+</html>

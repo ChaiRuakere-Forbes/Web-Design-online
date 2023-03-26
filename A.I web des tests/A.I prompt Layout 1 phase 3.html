@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid-Based Layout Example</title>
+	<style>
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			border: 1px solid black;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 0;
+		}
+		.blue {
+			background-color: blue;
+			grid-row: 1 / 2;
+			grid-column: 1 / -1;
+			border: 1px solid black;
+		}
+		.red {
+			background-color: red;
+			grid-row: 2 / 3;
+			grid-column: 1 / 2;
+			height: 600px;
+			border: 1px solid black;
+		}
+		.green {
+			background-color: green;
+			grid-row: 2 / -1;
+			grid-column: 2 / 5;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="blue"></div>
+		<div class="red"></div>
+		<div class="green"></div>
+	</div>
+</body>
+</html>

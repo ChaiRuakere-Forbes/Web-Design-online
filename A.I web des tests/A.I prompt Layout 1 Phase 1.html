@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid-based Webpage Example</title>
+	<style>
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			border: 1px solid black;
+			display: grid;
+			grid-template-rows: 200px auto;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 0;
+			grid-template-areas: 
+				"blue blue blue blue"
+				"lime lime lime red";
+		}
+		.blue {
+			grid-area: blue;
+			background-color: blue;
+			border: 1px solid black;
+		}
+		.lime {
+			grid-area: lime;
+			background-color: lime;
+			border: 1px solid black;
+		}
+		.red {
+			grid-area: red;
+			background-color: red;
+			transform: rotate(-90deg);
+			transform-origin: top left;
+			height: 600px;
+			width: 600px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="blue"></div>
+		<div class="lime"></div>
+		<div class="lime"></div>
+		<div class="lime"></div>
+		<div class="red"></div>
+	</div>
+</body>
+</html>

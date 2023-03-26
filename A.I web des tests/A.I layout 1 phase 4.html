@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Grid-based Webpage</title>
+	<style>
+		body {
+			background-color: white;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			max-width: 800px;
+			margin: auto;
+			outline: 1px solid black;
+		}
+
+		.blue {
+			background-color: blue;
+			grid-column: 1 / 5;
+			height: 200px;
+			outline: 1px solid black;
+		}
+
+		.red {
+			background-color: red;
+			height: 600px;
+			outline: 1px solid black;
+		}
+
+		.green {
+			background-color: lime;
+			grid-column: 2 / 5;
+			outline: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="blue"></div>
+		<div class="red"></div>
+		<div class="green"></div>
+	</div>
+</body>
+</html>
